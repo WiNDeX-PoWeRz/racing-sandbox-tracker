@@ -1,113 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Racing Sandbox Game Progress Tracker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .progress-bar {
-            width: 100%;
-            height: 20px;
-            background-color: #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .progress {
-            height: 100%;
-            background-color: #27ae60;
-            width: 0%;
-            border-radius: 10px;
-            text-align: center;
-            color: white;
-            line-height: 20px;
-        }
-        textarea {
-            width: 100%;
-            height: 200px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            margin-bottom: 20px;
-        }
-        button {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Racing Sandbox Game Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #101010;
+      color: #eee;
+      padding: 2rem;
+      position: relative;
+    }
+    h1 {
+      color: #00d4ff;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .box {
+      background: #1e1e1e;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    .number-23 {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 5rem;
+      color: red;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
+  <h1>Racing Sandbox Game Tracker</h1>
 
-<header>
-    <h1>Racing Sandbox Game Progress Tracker</h1>
-</header>
+  <section class="box">
+    <h2>Current Focus</h2>
+    <p>Building out the core game map and realistic starter garage.</p>
+  </section>
 
-<div class="container">
-    <section class="section">
-        <h2>Map Development</h2>
-        <div class="progress-bar">
-            <div class="progress" style="width: 60%;">60% Complete</div>
-        </div>
-        <textarea placeholder="Ideas for Map Progress (City, Countryside, Tracks, etc.)"></textarea>
-    </section>
+  <section class="box">
+    <h2>Map Overview</h2>
+    <ul>
+      <li>Condensed LA-style city</li>
+      <li>Japanese countryside with touge roads</li>
+      <li>Open-world drift track and drag strip</li>
+      <li>Dynamic scenery (sunsets, weather, traffic)</li>
+    </ul>
+  </section>
 
-    <section class="section">
-        <h2>Car Culture & Vehicles</h2>
-        <div class="progress-bar">
-            <div class="progress" style="width: 40%;">40% Complete</div>
-        </div>
-        <textarea placeholder="Brainstorming Vehicle Types, Modifications, and Culture"></textarea>
-    </section>
+  <section class="box">
+    <h2>Garage</h2>
+    <p>Start in a small, rented garage behind a townhouse — humble beginnings.</p>
+  </section>
 
-    <section class="section">
-        <h2>AI & Game Mechanics</h2>
-        <div class="progress-bar">
-            <div class="progress" style="width: 30%;">30% Complete</div>
-        </div>
-        <textarea placeholder="Brainstorming AI Drivers, Racing Mechanics, etc."></textarea>
-    </section>
+  <section class="box">
+    <h2>Visual Goals</h2>
+    <p>High-end graphics like GTA 6 and Forza with ray tracing and realistic vegetation.</p>
+  </section>
 
-    <section class="section">
-        <button onclick="alert('Progress saved!');">Save Progress</button>
-    </section>
-</div>
-
+  <div class="number-23">23</div>
 </body>
 </html>
